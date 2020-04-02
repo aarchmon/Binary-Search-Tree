@@ -33,4 +33,4 @@ bool NodeOperations::dataInTree(TreeNode root, unsigned int value) {
 	return false;
 }
 
-#endif BINARYSEARCHTREE_TREE_CC_ // BINARYSEARCHTREE_TREE_CC_
+#endif // BINARYSEARCHTREE_TREE_CC_

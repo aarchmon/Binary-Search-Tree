@@ -44,7 +44,7 @@ all: Binary\ Search\ Tree
 Binary\ Search\ Tree: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MacOS X C++ Linker'
-	g++  -o "Binary Search Tree" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L/usr/local/lib/ -o "Binary Search Tree" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

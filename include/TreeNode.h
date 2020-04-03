@@ -1,6 +1,9 @@
 #ifndef BINARYSEARCHTREE_TREENODE_H_
 #define BINARYSEARCHTREEE_TREENODE_H_
 
+// Include files.
+#include <iostream>
+
 /**
  * @brief Binary Search Tree Node.
  */
@@ -10,12 +13,12 @@ public:
 	/**
 	 * @brief Left TreeNode.
 	 */
-	TreeNode *leftTree;
+	TreeNode *leftNode;
 
 	/**
 	 * @brief Right TreeNode.
 	 */
-	TreeNode *rightTree;
+	TreeNode *rightNode;
 
 	/**
 	 * @brief Data of TreeNode. For the sake of simplicity, we will only use unsigned integers.
@@ -29,15 +32,26 @@ public:
 
 	/**
 	 * @brief Parameterized constructor.
+	 *
+	 * @param dataValue Value of current node (unsigned int).
 	 */
-	TreeNode(int dataValue);
+	TreeNode(unsigned int dataValue);
+
+	/**
+	 * @brief Parameterized constructor.
+	 *
+	 * @param dataValue Value of currentNode (unsigned int).
+	 * @param leftNode Left Node of root.
+	 * @param rightNode Right Node of root.
+	 */
+	TreeNode(unsigned int dataValue, TreeNode* leftNode, TreeNode* rightNode);
 
 	/**
 	 * @brief Insert value into TreeNode.
 	 *
-	 * @param value Value to be inserted.
+	 * @param value Value to be inserted (unsigned int).
 	 */
-	void insert(int value);
+	TreeNode* insert(TreeNode* root, unsigned int value);
 
 };
 

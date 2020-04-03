@@ -17,3 +17,5 @@ To build and run the program in this repository while in a command line environm
 ```g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"source/Runner.d" -MT"source/Runner.o" -o "source/Runner.o" "../source/Runner.cpp"```
 
 5. An executable is now created. Run ```./Binary\ Search\ Tree``` to execute the program.
+
+__DISCLAIMER: The Binary Search Tree Node data structre that is present in this code is based off of the same data structure provided by GeeksForGeeks.com. I do not claim original ownership__.
